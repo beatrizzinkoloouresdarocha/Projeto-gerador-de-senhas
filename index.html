@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senhas</title>
+    <title>Gerador de Senhas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;
-    0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;1,200&display=swap"
-    rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Montserrat:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <div id="register-container">
-        <div id="bannner-register">
-            <div id="bannner-layer">
+        <div id="banner-register">
+            <div id="banner-layer">
                 <h1>Seja Bem-Vindo</h1>
             </div>
         </div>
+        
         <div id="register-form">
             <h2>Crie sua conta:</h2>
-            <p>Registre-se para usar todas as funcionabilidades do sistema</p>
+            <p>Registre-se para usar todas as funcionalidades do sistema</p>
             <div class="form-control">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" placeholder="Digite o seu nome">
             </div>
             <div class="form-control">
                 <label for="email">E-mail</label>
-                <input type="text" name="email" id="email" placeholder="Digite o seu email">
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
             </div>
             <div class="form-control">
                 <label for="password">Senha</label>
-                <input type="text" name="password" id="password" placeholder="Digite o sua senha">
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
             </div>
-            <p>Quer ajuda pra criar uma senha segura?<span id="generate-password">Click aqui.</span></p>
-            <div id="generate-password">
+            <p>Quer ajuda para criar uma senha segura? <span id="generate-password-link">Clique aqui.</span></p>
+            <div id="generated-password">
                 <p>Aqui está sua senha</p>
                 <h4></h4>
             </div>
             <div class="form-control">
-                <label for="confirmpasword">Confirmação de senha</label>
-                <input type="text" name="confirmpasword" id="confirmpasword" placeholder="Confirmação da sua senha ">
+                <label for="confirmpassword">Confirmação de senha</label>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirme sua senha">
             </div>
             <input type="submit" value="Cadastrar">
         </div>
